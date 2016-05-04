@@ -1,0 +1,29 @@
+# Eclipse
+.classpath
+.project
+.settings/
+/bin/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+.tern-project
+build/
+
+# Vagrant
+ansible/
+.vagrant/
+Vagrantfile
+
+# logfiles
+*.*log*
+/node_modules/

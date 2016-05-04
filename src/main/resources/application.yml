@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.hibernate.tool.hbm2ddl: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+  file: application.log
+spring:
+  datasource:
+    url: jdbc:h2:mem:citydb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  h2.console.enabled: true
+  jpa:
+    hibernate.ddl-auto: create-drop
+weather:
+  api:
+    endpoint: "http://api.openweathermap.org/data/2.5/weather?units=metric&appid=fda933ebbb321ba69d357ebc363a473d&q="
+    updatedDateTimePattern: "EEEE, MMM dd yyyy hh:mm:ss a"
+cities:
+  dataFile: "/cities.txt"
+  valueDelimiter: ","
